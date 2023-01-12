@@ -10,7 +10,7 @@ import utils.interfaces.Searching;
 
 /*
     Time Complexity
-        BC: O(c)    k is the first element of the array V
+        BC: O(1)    k is the first element of the array V
         WC: O(n)    k is not present in array V
         MC: O(n)
 

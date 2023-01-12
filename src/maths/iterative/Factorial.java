@@ -4,16 +4,16 @@ import utils.constants.Test;
 
 /*
     Time Complexity: O(n)
-    Space Complexity: O(c)
+    Space Complexity: O(1)
  */
 public class Factorial {
-    public long factorial (int n) {
+    public long factorial(int n) {
         long f = 1;
         // for (int i = 1; i <= n; f *= i, ++i);
-        for(int i = 1; i <= n; i ++) {
+        for (int i = 1; i <= n; i ++) {
             f *= i;
         }
-        return(f);
+        return (f);
     }
 
     public static void main(String[] args) {

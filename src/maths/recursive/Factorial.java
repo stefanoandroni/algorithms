@@ -7,11 +7,11 @@ import utils.constants.Test;
     Space Complexity: O(n)
  */
 public class Factorial {
-    public long factorial (int n) {
+    public long factorial(int n) {
         if (n == 0) {
             return(1);
         }
-        return(n * factorial(n - 1));
+        return (n * factorial(n - 1));
     }
 
     public static void main(String[] args) {

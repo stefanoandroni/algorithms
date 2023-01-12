@@ -10,7 +10,7 @@ import utils.interfaces.Searching;
 
 /*
     Time Complexity
-        BC: O(c)            k is in the middle position of the array V
+        BC: O(1)            k is in the middle position of the array V
         WC: O(log(2)n)      k is not present in array V
         MC: O(log(2)n)
  */
