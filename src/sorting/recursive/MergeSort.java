@@ -2,12 +2,15 @@ package sorting.recursive;
 
 /*
     type: divide and conquer
- */
+*/
 
 /*
     Merge sort: A divide and conquer sorting algorithm that recursively divides the input list into two halves, sorts
     each half, and then merges the sorted halves back together. This results in a fully sorted list. It is a stable
     sort, meaning that the order of elements with equal keys is preserved.
+
+    > Not in place
+    > Stable
  */
 
 /*
