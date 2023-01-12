@@ -21,18 +21,16 @@ package sorting.recursive;
  */
 
 import utils.constants.Test;
-import utils.interfaces.Sorting;
 
 import java.util.Arrays;
 
-public class MergeSort implements Sorting {
+public class MergeSort { // implements Sorting
 
-    @Override
-    public <T extends Comparable<T>> T[] sort(T[] V) {
+    public static <T extends Comparable<T>> T[] sort(T[] V) {
         return sort(V.clone(), 0, V.length - 1);
     }
 
-    private <T extends Comparable<T>> T[] sort(T[] A, int sx, int dx) {
+    private static <T extends Comparable<T>> T[] sort(T[] A, int sx, int dx) {
         if (sx < dx) {
             // divide
             int m = (sx + dx) / 2;
@@ -44,7 +42,7 @@ public class MergeSort implements Sorting {
         return (A);
     }
 
-    private <T extends Comparable<T>> void merge(T[] A, int sx, int m, int dx) {
+    private static <T extends Comparable<T>> void merge(T[] A, int sx, int m, int dx) {
         // range 1 -> [sx, m]
         // range 2 -> [m+1, dx]
         int bI = sx; // B index
@@ -85,7 +83,6 @@ public class MergeSort implements Sorting {
     }
 
     public static void main(String[] args) {
-        MergeSort mergeSort = new MergeSort();
-        System.out.println(Arrays.toString(mergeSort.sort(Test.V)));
+        System.out.println(Arrays.toString(MergeSort.sort(Test.V)));
     }
 }

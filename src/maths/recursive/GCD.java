@@ -1,7 +1,7 @@
 package maths.recursive;
 
 public class GCD {
-    public int GCD(int m, int n) {
+    public static int gcd(int m, int n) {
         if (m > n) {
             // swap m and n
             int tmp = m;
@@ -12,11 +12,10 @@ public class GCD {
         if (m == 0) {
             return (n);
         }
-        return (GCD(m, n - m));
+        return (gcd(m, n - m));
     }
 
     public static void main(String[] args) {
-        GCD gcd = new GCD();
-        System.out.println(gcd.GCD(50, 120));
+        System.out.println(GCD.gcd(50, 120));
     }
 }

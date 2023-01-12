@@ -5,7 +5,7 @@ package maths.recursive;
     Space Complexity: O(n)
  */
 public class Factorial {
-    public long factorial(int n) {
+    public static long factorial(int n) {
         if (n == 0) {
             return (1);
         }
@@ -13,7 +13,6 @@ public class Factorial {
     }
 
     public static void main(String[] args) {
-        Factorial factorial = new Factorial();
-        System.out.println(factorial.factorial(6));
+        System.out.println(Factorial.factorial(6));
     }
 }

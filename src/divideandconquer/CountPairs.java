@@ -10,11 +10,11 @@ import utils.constants.Test;
         Out: 3
  */
 public class CountPairs {
-    public <T extends Comparable<T>> int countPairs(T[] A) {
+    public static <T extends Comparable<T>> int countPairs(T[] A) {
         return count(A, 0, A.length - 1);
     }
 
-    private <T extends Comparable<T>> int count(T[] A, int sx, int dx) {
+    private static <T extends Comparable<T>> int count(T[] A, int sx, int dx) {
         if (sx == dx) {
             return (0);
         }
@@ -24,7 +24,7 @@ public class CountPairs {
         int r2 = count(A, m + 1, dx);
 
         int r3 = 0;
-        if (A[m].compareTo(A[m+1]) == 0) {
+        if (A[m].compareTo(A[m + 1]) == 0) {
             r3 = 1;
         }
 
@@ -32,7 +32,6 @@ public class CountPairs {
     }
 
     public static void main(String[] args) {
-        CountPairs countPairs = new CountPairs();
-        System.out.println(countPairs.countPairs(Test.V));
+        System.out.println(CountPairs.countPairs(Test.V));
     }
 }

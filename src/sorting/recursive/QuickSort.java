@@ -1,7 +1,6 @@
 package sorting.recursive;
 
 import utils.constants.Test;
-import utils.interfaces.Sorting;
 
 import java.util.Arrays;
 
@@ -19,13 +18,13 @@ import java.util.Arrays;
     > In place
     > Not stable
 */
-public class QuickSort implements Sorting {
-    @Override
-    public <T extends Comparable<T>> T[] sort(T[] V) {
+public class QuickSort { // implements Sorting
+
+    public static <T extends Comparable<T>> T[] sort(T[] V) {
         return sort(V.clone(), 0, V.length - 1);
     }
 
-    private <T extends Comparable<T>> T[] sort(T[] A, int start, int end) {
+    private static <T extends Comparable<T>> T[] sort(T[] A, int start, int end) {
         /*
             if (sx == dx) {
                 // do nothing
@@ -43,7 +42,7 @@ public class QuickSort implements Sorting {
         return A;
     }
 
-    private <T extends Comparable<T>> int Partition(T[] A, int start, int end) {
+    private static <T extends Comparable<T>> int Partition(T[] A, int start, int end) {
         int sx = start - 1;
         int dx = end + 1;
         T pivot = A[start];
@@ -51,11 +50,11 @@ public class QuickSort implements Sorting {
         while (sx < dx) {
 
             do {
-                sx ++;
+                sx++;
             } while (sx < A.length - 1 && A[sx].compareTo(pivot) < 0);
 
             do {
-                dx --;
+                dx--;
             } while (dx > 0 && A[dx].compareTo(pivot) > 0);
 
             if (sx < dx) {
@@ -68,7 +67,6 @@ public class QuickSort implements Sorting {
     }
 
     public static void main(String[] args) {
-        QuickSort quickSort = new QuickSort();
-        System.out.println(Arrays.toString(quickSort.sort(Test.V)));
+        System.out.println(Arrays.toString(QuickSort.sort(Test.V)));
     }
 }

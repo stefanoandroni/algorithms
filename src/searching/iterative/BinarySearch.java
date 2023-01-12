@@ -1,7 +1,6 @@
 package searching.iterative;
 
 import utils.constants.Test;
-import utils.interfaces.Searching;
 
 /*
     Binary search: An efficient algorithm for finding an item in a sorted list of items by repeatedly dividing the
@@ -15,13 +14,12 @@ import utils.interfaces.Searching;
         MC: O(log(2)n)
  */
 
-public class BinarySearch implements Searching {
+public class BinarySearch { // implements Searching
 
     /**
      * Precondition: V sorted (in ascending order)
      */
-    @Override
-    public <T extends Comparable<T>> int find(T[] V, T k) {
+    public static <T extends Comparable<T>> int find(T[] V, T k) {
         int sx = 0;
         int dx = V.length - 1;
         int m = (sx + dx) / 2;
@@ -42,7 +40,6 @@ public class BinarySearch implements Searching {
     }
 
     public static void main(String[] args) {
-        BinarySearch binarySearch = new BinarySearch();
-        System.out.println(binarySearch.find(Test.VSorted, Test.k));
+        System.out.println(BinarySearch.find(Test.VSorted, Test.k));
     }
 }

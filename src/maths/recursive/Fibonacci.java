@@ -7,7 +7,7 @@ package maths.recursive;
             Case where the recursive algorithm has higher complexity than the iterative version
  */
 public class Fibonacci {
-    public int fibonacci(int n) {
+    public static int fibonacci(int n) {
         if (n == 1 || n == 2) {
             return (1);
         }
@@ -17,7 +17,6 @@ public class Fibonacci {
     }
 
     public static void main(String[] args) {
-        Fibonacci fibonacci = new Fibonacci();
-        System.out.println(fibonacci.fibonacci(15));
+        System.out.println(Fibonacci.fibonacci(15));
     }
 }

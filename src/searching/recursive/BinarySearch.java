@@ -1,9 +1,6 @@
 package searching.recursive;
 
 import utils.constants.Test;
-import utils.interfaces.Searching;
-
-import java.util.Arrays;
 
 /*
     Binary search: An efficient algorithm for finding an item in a sorted list of items by repeatedly dividing the
@@ -12,17 +9,16 @@ import java.util.Arrays;
 /*
     type: divide and conquer (?)
 */
-public class BinarySearch implements Searching {
+public class BinarySearch { // implements Searching
 
     /**
      * Precondition: V sorted (in ascending order)
      */
-    @Override
-    public <T extends Comparable<T>> int find(T[] V, T k) {
+    public static <T extends Comparable<T>> int find(T[] V, T k) {
         return findRecursive(V, 0, V.length - 1, k);
     }
 
-    private <T extends Comparable<T>> int findRecursive(T[] A, int sx, int dx, T k) {
+    private static <T extends Comparable<T>> int findRecursive(T[] A, int sx, int dx, T k) {
         if (sx > dx) {
             return -1;
         }
@@ -38,8 +34,7 @@ public class BinarySearch implements Searching {
     }
 
     public static void main(String[] args) {
-        BinarySearch binarySearch = new BinarySearch();
-        System.out.println(binarySearch.find(Test.VSorted, Test.k));
+        System.out.println(BinarySearch.find(Test.VSorted, Test.k));
     }
 
 }

@@ -1,7 +1,6 @@
 package sorting.iterative;
 
 import utils.constants.Test;
-import utils.interfaces.Sorting;
 
 import java.util.Arrays;
 
@@ -17,10 +16,9 @@ import java.util.Arrays;
         MC: O(n^2)
  */
 
-public class InsertionSort implements Sorting {
+public class InsertionSort { // implements Sorting
 
-    @Override
-    public <T extends Comparable<T>> T[] sort(T[] V) {
+    public static <T extends Comparable<T>> T[] sort(T[] V) {
         T[] A = V.clone();
         for (int j = 1; j < A.length; j++) {
             T k = A[j];
@@ -35,7 +33,6 @@ public class InsertionSort implements Sorting {
     }
 
     public static void main(String[] args) {
-        InsertionSort insertionSort = new InsertionSort();
-        System.out.println(Arrays.toString(insertionSort.sort(Test.V)));
+        System.out.println(Arrays.toString(InsertionSort.sort(Test.V)));
     }
 }
