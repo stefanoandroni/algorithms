@@ -4,13 +4,22 @@ import utils.constants.Test;
 import utils.interfaces.Searching;
 
 /*
- *  Time Complexity
- *      BC: O(c)            k is the middle position of the array V
- *      WC: O(log(2)n)      k is not present in array V
- *      MC: O(log(2)n)
+    Binary search: An efficient algorithm for finding an item in a sorted list of items by repeatedly dividing the
+    search interval in half.
+*/
+
+/*
+    Time Complexity
+        BC: O(c)            k is in the middle position of the array V
+        WC: O(log(2)n)      k is not present in array V
+        MC: O(log(2)n)
  */
+
 public class BinarySearch implements Searching {
 
+    /**
+     * Precondition: V sorted (in ascending order)
+     */
     @Override
     public <T extends Comparable<T>> int find(T[] V, T k) {
         int sx = 0;
@@ -18,22 +27,22 @@ public class BinarySearch implements Searching {
         int m = (sx + dx) / 2;
 
         while (V[m].compareTo(k) != 0 && sx <= dx) {
-            if (V[m].compareTo(k) > 0)
+            if (V[m].compareTo(k) < 0)
                 sx = m + 1;
             else
-                dx = m-1;
+                dx = m - 1;
 
             m = (sx + dx) / 2;
         }
 
         if (sx <= dx)
-            return(m);
+            return (m);
 
         return -1;
     }
 
     public static void main(String[] args) {
         BinarySearch binarySearch = new BinarySearch();
-        System.out.println(binarySearch.find(Test.V, Test.k));
+        System.out.println(binarySearch.find(Test.VSorted, Test.k));
     }
 }

@@ -4,14 +4,20 @@ import utils.constants.Test;
 import utils.interfaces.Searching;
 
 /*
- *  Time Complexity
- *      BC: O(c)    k is the first element of the array V
- *      WC: O(n)    k is not present in array V
- *      MC: O(n)
- *
- *      Note
- *          If the array V is sorted, only the MC is lowered.
+    Linear search: A simple algorithm for finding an item in a list by checking each item in the list until the desired
+    item is found.
+*/
+
+/*
+    Time Complexity
+        BC: O(c)    k is the first element of the array V
+        WC: O(n)    k is not present in array V
+        MC: O(n)
+
+        Note
+            If the array V is sorted, only the MC is lowered (...).
  */
+
 public class LinearSearch implements Searching {
 
     @Override
