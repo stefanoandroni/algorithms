@@ -1,7 +1,5 @@
 package maths.recursive;
 
-import utils.constants.Test;
-
 /*
     Time Complexity: O(n)
     Space Complexity: O(n)
@@ -9,7 +7,7 @@ import utils.constants.Test;
 public class Factorial {
     public long factorial(int n) {
         if (n == 0) {
-            return(1);
+            return (1);
         }
         return (n * factorial(n - 1));
     }

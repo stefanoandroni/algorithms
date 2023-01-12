@@ -1,6 +1,10 @@
 package sorting.recursive;
 
 /*
+    type: divide and conquer
+ */
+
+/*
     Merge sort: A divide and conquer sorting algorithm that recursively divides the input list into two halves, sorts
     each half, and then merges the sorted halves back together. This results in a fully sorted list. It is a stable
     sort, meaning that the order of elements with equal keys is preserved.
@@ -13,7 +17,6 @@ package sorting.recursive;
         MC: O(n lg n)
  */
 
-import sorting.iterative.SelectionSort;
 import utils.constants.Test;
 import utils.interfaces.Sorting;
 
@@ -23,15 +26,15 @@ public class MergeSort implements Sorting {
 
     @Override
     public <T extends Comparable<T>> T[] sort(T[] V) {
-        return mergeSort(V.clone(), 0, V.length - 1);
+        return sort(V.clone(), 0, V.length - 1);
     }
 
-    private <T extends Comparable<T>> T[] mergeSort(T[] A, int sx, int dx) {
+    private <T extends Comparable<T>> T[] sort(T[] A, int sx, int dx) {
         if (sx < dx) {
             // divide
             int m = (sx + dx) / 2;
-            mergeSort(A, sx, m);
-            mergeSort(A, m + 1, dx);
+            sort(A, sx, m);
+            sort(A, m + 1, dx);
             // combine
             merge(A, sx, m, dx); // [sx, m] [m+1, dx]
         }
@@ -50,29 +53,29 @@ public class MergeSort implements Sorting {
         while (sxI <= m && dxI <= dx) {
             if (A[sxI].compareTo(A[dxI]) <= 0) { // stable sort ( <= -> sx first if equals)
                 B[bI] = A[sxI];
-                sxI ++;
+                sxI++;
             } else {
                 B[bI] = A[dxI];
-                dxI ++;
+                dxI++;
             }
-            bI ++;
+            bI++;
         }
 
         // add elements of range 1 exceeding to B (not compared elements)
         while (sxI <= m) {
             B[bI] = A[sxI];
-            bI ++;
-            sxI ++;
+            bI++;
+            sxI++;
         }
 
         // add elements of range 2 exceeding to B (not compared elements)
         while (dxI <= dx) {
             B[bI] = A[dxI];
-            bI ++;
-            dxI ++;
+            bI++;
+            dxI++;
         }
 
-        for (int i = sx; i <= dx; i ++) {
+        for (int i = sx; i <= dx; i++) {
             A[i] = B[i];
         }
 
@@ -81,6 +84,5 @@ public class MergeSort implements Sorting {
     public static void main(String[] args) {
         MergeSort mergeSort = new MergeSort();
         System.out.println(Arrays.toString(mergeSort.sort(Test.V)));
-        System.out.println(Arrays.toString(Test.V));
     }
 }

@@ -6,7 +6,7 @@ import utils.interfaces.Sorting;
 import java.util.Arrays;
 
 /*
-    Selection sort: A simple sorting algorithm that repeatedly selects the next smallest/largest element from the
+    Selection sort: A simple sorting algorithm that repeatedly selects the next smallest(/largest) element from the
     unsorted portion of the list and places it at the end of the sorted portion.
  */
 
