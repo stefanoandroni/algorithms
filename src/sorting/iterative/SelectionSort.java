@@ -18,7 +18,7 @@ import java.util.Arrays;
 public class SelectionSort { // implements Sorting
 
     public static <T extends Comparable<T>> T[] sort(T[] V) {
-        T[] A = V.clone();
+        T[] A = V.clone(); // return a copy
         for (int i = 0; i < A.length - 1; i++) {
             int minPos = i;
             for (int j = i + 1; j < A.length; j++) {
