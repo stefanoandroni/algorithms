@@ -1,4 +1,4 @@
-package strings.recursive;
+package string.recursive;
 
 
 public class Palindrome {

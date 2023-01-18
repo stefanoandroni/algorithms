@@ -1,4 +1,4 @@
-package strings.iterative;
+package string.iterative;
 
 public class Palindrome {
 
