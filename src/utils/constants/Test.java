@@ -5,6 +5,10 @@ public class Test {
     public static final Integer[] VSorted = {3, 6, 13, 14, 17, 23, 23, 24, 24, 24, 26, 33, 33, 34, 67, 78, 114, 156};
     public static final Integer k = 33;
 
+    public static final String SEvenVowels = "asfbdwjoewo";
+    public static final String SOddVowels = "baswrtgovi";
+
+
     public static final Integer [][] MSimmetric = {
             {1, 2, 3, 4, 5, 6, 7},
             {2, 1, 2, 3, 4, 5, 6},

@@ -33,7 +33,7 @@ public class BubbleSort {
         sort(A, A.length);
     }
 
-    public static <T extends Comparable<T>> void sort(T[] A, int n) {
+    private static <T extends Comparable<T>> void sort(T[] A, int n) {
         if (n == 1) return; // base case: if the array has only one element, it's already sorted
         for (int i = 0; i < n - 1; i++) {
             if (A[i].compareTo(A[i + 1]) > 0) {

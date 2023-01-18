@@ -26,9 +26,10 @@ Some algorithms implemented in Java (with comments).
 ## sorting
 - BubbleSort *(I, R)*
 - InsertionSort *(I)*
-- SelectionSort *(I)*
 - MergeSort *(R)*
+- SelectionSort *(I)*
 - QuickSort *(R)*
 
-## strings
+## string
+- EvenVowels *(R)*
 - Palindrome *(I, R)*
