@@ -10,6 +10,12 @@ import java.util.Arrays;
  */
 
 /*
+    method: incremental
+    in place: yes
+    stable: yes
+*/
+
+/*
     Note
         This implementation uses the same logic as the iterative version, but instead of using a loop to iterate over
         the array multiple times, it uses a recursive function call to sort a sub-array of the input array.

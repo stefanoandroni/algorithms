@@ -11,6 +11,8 @@ import java.util.Arrays;
 
 /*
     method: incremental
+    in place: yes
+    stable: yes
 */
 
 /*

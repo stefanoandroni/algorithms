@@ -10,6 +10,12 @@ import java.util.Arrays;
  */
 
 /*
+    method: incremental
+    in place: yes
+    stable: yes
+*/
+
+/*
     Time Complexity
         WC: O(n^2)
         MC: O(n^2)
