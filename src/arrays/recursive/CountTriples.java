@@ -1,4 +1,4 @@
-package arrays;
+package arrays.recursive;
 
 import utils.constants.Test;
 
