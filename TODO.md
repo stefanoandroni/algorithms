@@ -1,1 +1,1 @@
-QuickSort randomized version + Lomuto
+QuickSort  Lomuto

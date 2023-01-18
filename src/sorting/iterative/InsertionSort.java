@@ -14,7 +14,8 @@ import java.util.Arrays;
 */
 
 /*
-    > is an efficient algorithm for sorting a small number of elements
+    Note
+        > is an efficient algorithm for sorting a small number of elements
 */
 
 /*
