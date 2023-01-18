@@ -1,4 +1,4 @@
-package divideandconquer;
+package arrays;
 
 import utils.constants.Test;
 
@@ -9,6 +9,10 @@ import utils.constants.Test;
                                   ____
         Out: 3
  */
+
+/*
+    method: divide and conquer
+*/
 public class CountPairs {
     public static <T extends Comparable<T>> int countPairs(T[] A) {
         return count(A, 0, A.length - 1);

@@ -1,4 +1,4 @@
-package divideandconquer;
+package arrays;
 
 import utils.constants.Test;
 
@@ -9,6 +9,10 @@ import utils.constants.Test;
                                         _______
         Out: 3
  */
+
+/*
+    method: divide and conquer
+*/
 public class CountTriples {
 
     public static <T extends Comparable<T>> int countTriples(T[] A) {
