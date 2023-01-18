@@ -26,7 +26,7 @@ public class QuickSort { // implements Sorting
 
     private static <T extends Comparable<T>> T[] sort(T[] A, int start, int end) {
         /*
-            if (sx == dx) {
+            if (start == end) {
                 // do nothing
             }
         */

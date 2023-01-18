@@ -1,6 +1,5 @@
 package sorting.iterative;
 
-import sorting.recursive.MergeSort;
 import utils.constants.Test;
 
 import java.util.Arrays;

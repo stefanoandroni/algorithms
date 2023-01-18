@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 /*
     Insertion sort: A simple sorting algorithm that builds the final sorted list one item at a time by repeatedly
-    inserting the next item into the correct position in the already sorted portion of the list.
+    inserting the next item into the correct position in the already sorted portion of the list (sorting playing cards).
 
  */
 
@@ -21,7 +21,7 @@ import java.util.Arrays;
 /*
     Time Complexity
         BC: O(n)    V is sorted (never enters the while loop)
-        WC: O(n^2)  V is sorted in reverse (while loop exits only when i reaches -1)
+        WC: O(n^2)  V is sorted in reverse (while loop exits only when i index reaches -1)
         MC: O(n^2)
  */
 

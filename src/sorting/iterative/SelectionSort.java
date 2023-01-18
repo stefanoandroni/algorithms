@@ -11,8 +11,8 @@ import java.util.Arrays;
 
 /*
     Time Complexity
-        BC: O(n^2)
-        WC: O(n^2)
+        BC: O(n^2)  V is sorted
+        WC: O(n^2)  'if' statement always true
         MC: O(n^2)
  */
 public class SelectionSort { // implements Sorting
