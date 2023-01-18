@@ -17,6 +17,7 @@ import java.util.Random;
     method: divide and conquer
     in place: yes
     stable: no
+    comparison: yes
 */
 public class QuickSort { // implements Sorting
 

@@ -10,6 +10,7 @@ package sorting.recursive;
     method: divide and conquer
     in place: no
     stable: yes
+    comparison: yes
 */
 
 /*

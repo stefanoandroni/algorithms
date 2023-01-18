@@ -6,7 +6,7 @@ Some algorithms implemented in Java (with comments).
 
 ***I*** : iterative version
 
-## arrays
+## array
 - CountPairs *(R)*
 - CountTriples *(R)*
 
