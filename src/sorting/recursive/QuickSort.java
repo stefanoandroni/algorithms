@@ -21,7 +21,7 @@ import java.util.Random;
 public class QuickSort { // implements Sorting
 
     public static <T extends Comparable<T>> T[] sort(T[] V) {
-        return sort(V.clone(), 0, V.length - 1);
+        return sort(V, 0, V.length - 1);
     }
 
     private static <T extends Comparable<T>> T[] sort(T[] A, int start, int end) {
@@ -85,6 +85,6 @@ public class QuickSort { // implements Sorting
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(QuickSort.sort(Test.V)));
+        System.out.println(Arrays.toString(QuickSort.sort(Test.V.clone())));
     }
 }

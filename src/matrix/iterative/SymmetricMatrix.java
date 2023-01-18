@@ -4,7 +4,7 @@ import utils.constants.Test;
 
 /*
     Optimization
-        Opt1 - it is not useful to check the main diagonal M[r][c] == M[c][r] if r == c
+        Opt1 - it is not useful to check the main diagonal --> M[r][c] == M[c][r] if r == c
         Opt2 - it is not useful to check if M[c][r]==M[r][c] if it has already been checked M[r][c]==M[c][r]
  */
 public class SymmetricMatrix {
