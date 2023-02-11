@@ -4,13 +4,16 @@ Some algorithms implemented in Java (with comments).
 # Algorithms
 ***R*** : recursive version
 
+***DC*** : divide and conquer version
+
 ***I*** : iterative version
 
 ## array
-- CountPairs *(R)*
-- CountTriples *(R)*
+- CountPairs *(DC)*
+- CountTriples *(DC)*
+- MaxValue *(DC,R)*
 
-## maths
+## math
 - Factorial *(I, R)*
 - Fibonacci *(R)*
 - GCD *(R)*
@@ -20,16 +23,16 @@ Some algorithms implemented in Java (with comments).
 - SymmetricMatrix *(I)*
 
 ## searching
-- BinarySearch *(I, R)*
+- BinarySearch *(I, DC)*
 - LinearSearch *(I)*
 
 ## sorting
 - BubbleSort *(I, R)*
 - InsertionSort *(I)*
-- MergeSort *(R)*
+- MergeSort *(DC)*
 - SelectionSort *(I)*
-- QuickSort *(R)*
+- QuickSort *(DC)*
 
 ## string
-- EvenVowels *(R)*
+- EvenVowels *(DC)*
 - Palindrome *(I, R)*
