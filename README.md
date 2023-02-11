@@ -11,13 +11,13 @@ Some algorithms implemented in Java (with comments).
 ## array
 - CountPairs *(DC)*
 - CountTriples *(DC)*
-- MaxValue *(DC,R)*
+- MaxValue *(DC, R)*
 
 ## math
 - Factorial *(I, R)*
 - Fibonacci *(R)*
 - GCD *(R)*
-- Power *(R)*
+- Power *(R, DC)*
 
 ## matrix
 - SymmetricMatrix *(I)*
