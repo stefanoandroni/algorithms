@@ -2,11 +2,16 @@
 Some algorithms implemented in Java (with comments).
 
 # Algorithms
+
+---
+### .recursive
 ***R*** : recursive version
 
 ***DC*** : divide and conquer version
-
+### .iterative
 ***I*** : iterative version
+
+---
 
 ## array
 - CountPairs *(DC)*
@@ -17,7 +22,7 @@ Some algorithms implemented in Java (with comments).
 - Factorial *(I, R)*
 - Fibonacci *(R)*
 - GCD *(R)*
-- Power *(R, DC)*
+- Power *(I, R, DC)*
 
 ## matrix
 - SymmetricMatrix *(I)*
